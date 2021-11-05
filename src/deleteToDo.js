@@ -1,4 +1,7 @@
 import state from "./state"
+import render from "./render";
+
+console.log(state)
 
 const deleteToDo = (id) => {
     fetch(`http://localhost:3030/${id}`, {
@@ -7,9 +10,10 @@ const deleteToDo = (id) => {
     })
         .then((res) => {
             if (res.ok) {
-                state.todos.forEach((item) => {
+                state.todos.forEach((item, ind) => {
                     if (item._id === id) {
-                        item._id.parentElement.remove()
+                        state.todos.splice(ind, 1)
+                        console.log(state)
                     }
                 })
             }
@@ -17,6 +21,7 @@ const deleteToDo = (id) => {
         .catch((e) => {
             console.log(`Ошибка ${e}`)
     })
+    render()
 }
 
 export default deleteToDo

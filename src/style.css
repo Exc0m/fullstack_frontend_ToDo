@@ -9,7 +9,7 @@ body{
   border: 10px ridge gold;
   background-color: black;
 }
-#root{
+.content{
   width: 400px;
   margin: auto;
   text-align: center;

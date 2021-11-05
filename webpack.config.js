@@ -37,7 +37,7 @@ module.exports = {
       }]
   },
   resolve: {
-    extensions: [".js", ".json", ".png", ".wasm"]
+    extensions: [".js", ".json", ".png", ".css"]
   },
   devServer: {
     port: 3000

@@ -1,7 +1,6 @@
 {
   "name": "babel",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "development": "webpack --mode development",
@@ -27,5 +26,15 @@
     "webpack": "^5.61.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.4.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliUmarov/fullstack_frontend_ToDo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AliUmarov/fullstack_frontend_ToDo/issues"
+  },
+  "homepage": "https://github.com/AliUmarov/fullstack_frontend_ToDo#readme",
+  "description": ""
 }

@@ -1,4 +1,55 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 500px;
+  margin: auto;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  border: 10px ridge gold;
+  background-color: black;
+}
 #root{
+  width: 400px;
   margin: auto;
   text-align: center;
+}
+h1{
+  color: grey;
+  font-family: "Bookman Old Style";
+}
+.content{
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  justify-content: space-between;
+}
+.divList{
+  width: 400px;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  transition: 0.3s linear;
+  justify-content: space-between;
+  border: 5px inset grey;
+  color: black;
+  background-color: white;
+}
+.divList:hover{
+  background-color: gold;
+}
+#add{
+  height: 30px;
+  background-color: gold;
+}
+#add:hover{
+  background-color: goldenrod;
+  transition: .1s;
+}
+#input_text{
+  width: 250px;
+  height: 30px;
+}
+::placeholder{
+  font-style: italic;
 }
